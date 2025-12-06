@@ -1,7 +1,8 @@
 GRANT ALL PRIVILEGES ON SCHEMA biblioteca TO admins;
 
--- Permissão para criar objetos no schema
-GRANT CREATE ON SCHEMA biblioteca TO admins;
+-- Permissões totais no schema PUBLIC
+GRANT ALL PRIVILEGES ON SCHEMA public TO admins;
+
 
 -- Permissões totais em todas as tabelas existentes
 GRANT ALL PRIVILEGES ON 

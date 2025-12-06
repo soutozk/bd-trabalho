@@ -6,34 +6,42 @@
 -- - SEM permissão de DELETE
 -- - EXECUTE em funções e procedimentos
 
--- Remover qualquer permissão perigosa
+-- Remove permissões no schema biblioteca
 REVOKE ALL ON SCHEMA biblioteca FROM professor;
 REVOKE CREATE ON SCHEMA biblioteca FROM professor;
 
--- Permisão para o professor usar o schema
+-- Bloquea também no schema PUBLIC
+REVOKE CREATE ON SCHEMA public FROM professor;
+
+-- Permitir apenas acesso de uso ao schema correto
 GRANT USAGE ON SCHEMA biblioteca TO professor;
+
 
 -- SELECT em TODAS as tabelas
 GRANT SELECT ON 
-    tb01_leitor,
+   tb01_leitor,
+    tb02_autor,
     tb03_livro,
-    tb04_emprestimo
-
+    tb04_emprestimo,
+    tb05_multa
 TO professor;
 
 -- INSERT e UPDATE nas tabelas principais
 GRANT INSERT, UPDATE ON 
-    tb01_leitor,
+   tb01_leitor,
+    tb02_autor,
     tb03_livro,
-    tb04_emprestimo
- 
+    tb04_emprestimo,
+    tb05_multa
 TO professor;
 
 -- NEGANDO DELETE explicitamente
 REVOKE DELETE ON 
     tb01_leitor,
+    tb02_autor,
     tb03_livro,
     tb04_emprestimo,
+    tb05_multa
 FROM professor;
 
 -- Permissão geral para todas as funções e procedures no schema

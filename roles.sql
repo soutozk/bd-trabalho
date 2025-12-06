@@ -1,14 +1,7 @@
--- ======================================================
--- D. SEGURANÇA E PERMISSÕES (DCL)
--- ======================================================
 
--- 1. Criar Roles de grupo (sem login)
+-- Cria Roles de grupo 
 CREATE ROLE admins NOLOGIN;
 CREATE ROLE professor NOLOGIN;
-
-----------------------------------------------------------
--- 2. Criar usuários e associar aos Roles
-----------------------------------------------------------
 
 -- Usuários administradores
 CREATE ROLE gabriel LOGIN PASSWORD 'gabriel123';
