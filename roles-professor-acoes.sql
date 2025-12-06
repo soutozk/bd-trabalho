@@ -34,10 +34,8 @@ TO professor;
 -- NEGANDO DELETE explicitamente
 REVOKE DELETE ON 
     tb01_leitor,
-    tb02_autor,
     tb03_livro,
     tb04_emprestimo,
-    tb05_multa
 FROM professor;
 
 -- Permissão geral para todas as funções e procedures no schema
