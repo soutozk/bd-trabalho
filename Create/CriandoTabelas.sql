@@ -1,4 +1,4 @@
-SET search_path = Biblioteca;
+SET search_path = "Biblioteca";
 
 -- ======================================================
 -- 1. TABELA: TB01_LEITOR
