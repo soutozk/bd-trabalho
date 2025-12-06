@@ -1,4 +1,4 @@
-GRANT ALL PRIVILEGES ON SCHEMA biblioteca TO admins;
+GRANT ALL PRIVILEGES ON SCHEMA Biblioteca TO admins;
 
 -- Permissões totais no schema PUBLIC
 GRANT ALL PRIVILEGES ON SCHEMA public TO admins;
@@ -14,11 +14,11 @@ GRANT ALL PRIVILEGES ON
 TO admins;
 
 -- Permissão total para futuras tabelas criadas automaticamente
-ALTER DEFAULT PRIVILEGES IN SCHEMA biblioteca
+ALTER DEFAULT PRIVILEGES IN SCHEMA Biblioteca
 GRANT ALL PRIVILEGES ON TABLES TO admins;
 
-GRANT ALL PRIVILEGES ON ALL SEQUENCES IN SCHEMA biblioteca TO admins;
-ALTER DEFAULT PRIVILEGES IN SCHEMA biblioteca
+GRANT ALL PRIVILEGES ON ALL SEQUENCES IN SCHEMA Biblioteca TO admins;
+ALTER DEFAULT PRIVILEGES IN SCHEMA Biblioteca
 GRANT ALL PRIVILEGES ON SEQUENCES TO admins;
 
 -- Permissões totais em funções e procedures
