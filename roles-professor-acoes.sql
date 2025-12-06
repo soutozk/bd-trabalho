@@ -16,19 +16,17 @@ GRANT USAGE ON SCHEMA biblioteca TO professor;
 -- SELECT em TODAS as tabelas
 GRANT SELECT ON 
     tb01_leitor,
-    tb02_autor,
     tb03_livro,
-    tb04_emprestimo,
-    tb05_multa
+    tb04_emprestimo
+
 TO professor;
 
 -- INSERT e UPDATE nas tabelas principais
 GRANT INSERT, UPDATE ON 
     tb01_leitor,
-    tb02_autor,
     tb03_livro,
-    tb04_emprestimo,
-    tb05_multa
+    tb04_emprestimo
+ 
 TO professor;
 
 -- NEGANDO DELETE explicitamente
