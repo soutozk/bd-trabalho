@@ -1,4 +1,4 @@
-SET search_path TO "Biblioteca";
+SET search_path TO biblioteca;
 
 -- ======================================================
 -- POPULAR TB01_LEITOR
