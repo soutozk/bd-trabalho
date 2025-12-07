@@ -1,5 +1,5 @@
 SET search_path = biblioteca;
-CREATE OR REPLACE PROCEDURE sp_registrar_emprestimo(
+CREATE OR REPLACE PROCEDURE biblioteca.sp_registrar_emprestimo(
     p_id_leitor INT,
     p_id_livro INT,
     p_data_prevista DATE
