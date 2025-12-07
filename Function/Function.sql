@@ -1,7 +1,7 @@
 -- ======================================================
 -- FUNÇÃO: Calcula multa de atraso baseada em um empréstimo
 -- ======================================================
-SET search_path = "Biblioteca";
+SET search_path = biblioteca ;
 CREATE OR REPLACE FUNCTION fn_calcular_multa_atraso(p_id_emprestimo INT)
 RETURNS NUMERIC(10,2)
 LANGUAGE plpgsql
